@@ -16,7 +16,7 @@ Start
   ^${INTERFACE}\sis\s+${LINK_STATUS},\s+line\sprotocol\sis\s+${ADMIN_STATE}
   ^\s+Hardware\s+is\s+${HARDWARE_TYPE}(\s+)?(Ethernet)?(,)?(\s+address\s+is\s+${ADDRESS}\s+\(bia\s+${BIA})?
   ^\s+Description:\s+${DESCRIPTION}
-  ^\s+Internet\s+Address\s+is\s+${IP_ADDRESS}
+  ^\s+Internet\s+(A|a)ddress\s+is\s+${IP_ADDRESS}
   ^\s+MTU\s+${MTU}.*BW\s+${BANDWIDTH}
   ^\s+${DUPLEX}, ${SPEED},.+link 
   ^\s+Encapsulation\s+${ENCAPSULATION}
