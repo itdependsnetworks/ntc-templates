@@ -1,0 +1,13 @@
+Value USERNAME (\S+)
+Value ROLE (\S+)
+Value HOST_IP (\S+)
+Value DEVICE (\S+)
+Value LOGIN_DATE ([\d\-]+)
+Value LOGIN_TIME ([\d:]+)
+
+Start
+ ^Username\s+Role\s+Host IP\s+Device\s+Time Logged In
+ ^[=\s]+
+ ^${USERNAME}\s+${ROLE}\s+${HOST_IP}\s+${DEVICE}\s+${LOGIN_DATE} ${LOGIN_TIME} -> Record
+ ^\s*$$
+ ^. -> Error

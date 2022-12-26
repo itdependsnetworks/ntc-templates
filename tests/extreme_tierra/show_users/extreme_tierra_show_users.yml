@@ -1,0 +1,8 @@
+---
+parsed_sample:
+  - username: "admin"
+    role: "admin"
+    host_ip: "10.10.10.10"
+    device: "SSH"
+    login_date: "2021-12-02"
+    login_time: "20:35"
